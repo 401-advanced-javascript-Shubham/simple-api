@@ -1,0 +1,296 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "defaultDescription",
+    "version": "0.1",
+    "title": "SimpleAPI"
+  },
+  "paths": {
+    "/categories": {
+      "post": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": false,
+            "schema": {
+              "$ref": "#/definitions/Model3"
+            },
+            "x-examples": {
+              "application/json": "{\"name\":\"electronics changed from swagger\",\"description\":\"New phones\"}"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Definition generated from Swagger Inspector",
+            "schema": {
+              "$ref": "#/definitions/Model11"
+            }
+          }
+        }
+      }
+    },
+    "/products": {
+      "post": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": false,
+            "schema": {
+              "$ref": "#/definitions/Model0"
+            },
+            "x-examples": {
+              "application/json": "{\n        \"categoryName\": \"Camera\",\n        \"displayName\": \"Digital\",\n        \"description\": \"digital Camera\"\n    }"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Definition generated from Swagger Inspector",
+            "schema": {
+              "$ref": "#/definitions/Model6"
+            }
+          }
+        }
+      },
+      "put": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": false,
+            "schema": {
+              "$ref": "#/definitions/Model1"
+            },
+            "x-examples": {
+              "application/json": "{\n        \"categoryName\": \"Camera\",\n        \"displayName\": \"Flashy\",\n        \"description\": \"digital Camera\"\n    }"
+            }
+          }
+        ],
+        "responses": {
+          "404": {
+            "description": "Definition generated from Swagger Inspector",
+            "schema": {
+              "$ref": "#/definitions/Model7"
+            }
+          }
+        }
+      },
+      "delete": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": false,
+            "schema": {
+              "$ref": "#/definitions/Model2"
+            },
+            "x-examples": {
+              "application/json": "{\n        \"categoryName\": \"Camera\",\n        \"displayName\": \"Flashy\",\n        \"description\": \"digital Camera\"\n    }"
+            }
+          }
+        ],
+        "responses": {
+          "404": {
+            "description": "Definition generated from Swagger Inspector",
+            "schema": {
+              "$ref": "#/definitions/Model9"
+            }
+          }
+        }
+      }
+    },
+    "/{param0}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "param0",
+            "in": "path",
+            "description": "Example values form path are: 'categories' and 'products'",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Definition generated from Swagger Inspector",
+            "schema": {
+              "$ref": "#/definitions/Model10"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Model0": {
+      "properties": {
+        "categoryName": {
+          "type": "string"
+        },
+        "displayName": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        }
+      }
+    },
+    "Model1": {
+      "properties": {
+        "categoryName": {
+          "type": "string"
+        },
+        "displayName": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        }
+      }
+    },
+    "Model2": {
+      "properties": {
+        "categoryName": {
+          "type": "string"
+        },
+        "displayName": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        }
+      }
+    },
+    "Model3": {
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        }
+      }
+    },
+    "Array": {
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    },
+    "Model4": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Array"
+      }
+    },
+    "Model5_Array": {
+      "properties": {
+        "categoryName": {
+          "type": "string"
+        },
+        "displayName": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    },
+    "Model6": {
+      "properties": {
+        "categoryName": {
+          "type": "string"
+        },
+        "displayName": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    },
+    "Model7": {},
+    "Model8": {},
+    "Model9": {},
+    "Model10_Array": {
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    },
+    "Model10": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Model10_Array"
+      }
+    },
+    "Model11": {
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    }
+  }
+}
