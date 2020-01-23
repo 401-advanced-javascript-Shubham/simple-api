@@ -10,7 +10,6 @@
 
 #### Documentation
 * [api docs](https://app.swaggerhub.com/apis/smajumdar22/simpleapi/0.1) 
-(https://app.swaggerhub.com/apis/smajumdar22/simpleapi/0.2)
 * JSDoc Comment Required for all modules and functions in all .js files
 
 ### Setup
