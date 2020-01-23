@@ -1,0 +1,32 @@
+{
+  "name": "simple-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "lint": "eslint **/.js",
+    "test": "jest --coverage --verbose",
+    "test-watch": "jest --watchAll --coverage --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/401-advanced-javascript-Shubham/simple-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/401-advanced-javascript-Shubham/simple-api/issues"
+  },
+  "homepage": "https://github.com/401-advanced-javascript-Shubham/simple-api#readme",
+  "dependencies": {
+    "json": "^9.0.6",
+    "server": "^1.0.22"
+  },
+  "devDependencies": {
+    "json-server": "^0.15.1"
+  }
+}
